@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Desktop\Personal_and_Others\efootball\cpp_bot\build\CMakeFiles\e7e9f3bb0262b55629f5712e29f1e97e\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{00780E98-B177-324E-A221-95F2BD2B6498}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

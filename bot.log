@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/efootball/main.py", line 14, in <module>
+    import db
+  File "/data/data/com.termux/files/home/efootball/db.py", line 2, in <module>
+    import aiosqlite
+ModuleNotFoundError: No module named 'aiosqlite'

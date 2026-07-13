@@ -1,0 +1,5 @@
+Flask
+qrcode
+zeroconf
+colorama
+ifaddr

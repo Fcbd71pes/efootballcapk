@@ -14,6 +14,7 @@ android {
         externalNativeBuild {
             cmake {
                 cppFlags "-std=c++17"
+                arguments "-DCMAKE_TOOLCHAIN_FILE=${System.getenv('VCPKG_ROOT')}/scripts/buildsystems/vcpkg.cmake", "-DVCPKG_TARGET_TRIPLET=arm64-android", "-DVCPKG_CHAINLOAD_TOOLCHAIN_FILE=${System.getenv('ANDROID_NDK_HOME')}/build/cmake/android.toolchain.cmake"
             }
         }
     }

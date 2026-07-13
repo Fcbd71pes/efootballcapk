@@ -1,0 +1,95 @@
+Cleaning all files in home directory...
+Installing dependencies...
+Collecting aiohttp
+  Using cached aiohttp-3.14.1-cp314-cp314-android_24_arm64_v8a.whl.metadata (8.3 kB)
+Collecting aiosqlite
+  Using cached aiosqlite-0.22.1-py3-none-any.whl.metadata (4.3 kB)
+Collecting fastapi
+  Using cached fastapi-0.139.0-py3-none-any.whl.metadata (26 kB)
+Requirement already satisfied: httpx in /data/data/com.termux/files/usr/lib/python3.14/site-packages (0.28.1)
+Collecting paramiko
+  Using cached paramiko-5.0.0-py3-none-any.whl.metadata (3.7 kB)
+Collecting pydantic
+  Using cached pydantic-2.13.4-py3-none-any.whl.metadata (109 kB)
+Requirement already satisfied: python-telegram-bot[job-queue] in /data/data/com.termux/files/usr/lib/python3.14/site-packages (22.8)
+Collecting aiohappyeyeballs>=2.5.0 (from aiohttp)
+  Using cached aiohappyeyeballs-2.7.1-py3-none-any.whl.metadata (5.9 kB)
+Collecting aiosignal>=1.4.0 (from aiohttp)
+  Using cached aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+Collecting attrs>=17.3.0 (from aiohttp)
+  Using cached attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting frozenlist>=1.1.1 (from aiohttp)
+  Using cached frozenlist-1.8.0-py3-none-any.whl.metadata (20 kB)
+Collecting multidict<7.0,>=4.5 (from aiohttp)
+  Using cached multidict-6.7.1-py3-none-any.whl.metadata (5.3 kB)
+Collecting propcache>=0.2.0 (from aiohttp)
+  Using cached propcache-0.5.2-py3-none-any.whl.metadata (16 kB)
+Collecting yarl<2.0,>=1.17.0 (from aiohttp)
+  Using cached yarl-1.24.2-py3-none-any.whl.metadata (94 kB)
+Requirement already satisfied: idna>=2.0 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from yarl<2.0,>=1.17.0->aiohttp) (3.18)
+Collecting starlette>=0.46.0 (from fastapi)
+  Using cached starlette-1.3.1-py3-none-any.whl.metadata (6.4 kB)
+Collecting typing-extensions>=4.8.0 (from fastapi)
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting typing-inspection>=0.4.2 (from fastapi)
+  Using cached typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+Collecting annotated-doc>=0.0.2 (from fastapi)
+  Using cached annotated_doc-0.0.4-py3-none-any.whl.metadata (6.6 kB)
+Requirement already satisfied: anyio in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from httpx) (4.14.1)
+Requirement already satisfied: certifi in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from httpx) (2026.6.17)
+Requirement already satisfied: httpcore==1.* in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from httpx) (1.0.9)
+Requirement already satisfied: h11>=0.16 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from httpcore==1.*->httpx) (0.16.0)
+Collecting bcrypt>=3.2 (from paramiko)
+  Using cached bcrypt-5.0.0.tar.gz (25 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting cryptography>=3.3 (from paramiko)
+  Using cached cryptography-49.0.0.tar.gz (854 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × installing build dependencies for cryptography did not run successfully.
+  │ exit code: 1
+  ╰─> [31 lines of output]
+      Collecting maturin!=1.12.0,<2,>=1.9.4
+        Using cached maturin-1.14.1.tar.gz (369 kB)
+        Installing build dependencies: started
+        Installing build dependencies: finished with status 'done'
+        Getting requirements to build wheel: started
+        Getting requirements to build wheel: finished with status 'done'
+        Installing backend dependencies: started
+        Installing backend dependencies: finished with status 'done'
+        Preparing metadata (pyproject.toml): started
+        Preparing metadata (pyproject.toml): finished with status 'error'
+        error: subprocess-exited-with-error
+      
+        × Preparing metadata (pyproject.toml) did not run successfully.
+        │ exit code: 1
+        ╰─> [6 lines of output]
+            /data/data/com.termux/files/usr/tmp/pip-build-env-gaf368k8/overlay/lib/python3.14/site-packages/setuptools/_vendor/wheel/bdist_wheel.py:4: FutureWarning: The 'wheel' package is no longer the canonical location of the 'bdist_wheel' command, and will be removed in a future release. Please update to setuptools v70.1 or later which contains an integrated version of this command.
+              warn(
+            Python reports SOABI: cpython-314-aarch64-linux-android
+            Computed rustc target triple: aarch64-unknown-linux-android
+            Target triple not supported by rustup: aarch64-unknown-linux-android
+            Rust not found, installing into a temporary directory
+            [end of output]
+      
+        note: This error originates from a subprocess, and is likely not a problem with pip.
+      error: metadata-generation-failed
+      
+      × Encountered error while generating package metadata.
+      ╰─> maturin
+      
+      note: This is an issue with the package mentioned above, not pip.
+      hint: See above for details.
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+ERROR: Failed to build 'cryptography' when installing build dependencies for cryptography
+Starting bot...
+Deployment successful!

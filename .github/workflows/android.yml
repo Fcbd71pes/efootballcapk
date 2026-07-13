@@ -19,9 +19,13 @@ jobs:
         distribution: 'temurin'
         cache: gradle
 
-    - name: Install NDK
+    - name: Install NDK and vcpkg
       run: |
         echo "y" | ${ANDROID_HOME}/cmdline-tools/latest/bin/sdkmanager --install "ndk;25.2.9519653" "cmake;3.22.1"
+        git clone https://github.com/microsoft/vcpkg.git
+        ./vcpkg/bootstrap-vcpkg.sh
+        echo "VCPKG_ROOT=$PWD/vcpkg" >> $GITHUB_ENV
+        echo "ANDROID_NDK_HOME=${ANDROID_HOME}/ndk/25.2.9519653" >> $GITHUB_ENV
 
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2

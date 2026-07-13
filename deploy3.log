@@ -1,0 +1,42 @@
+Installing dependencies...
+Collecting aiohttp
+  Using cached aiohttp-3.14.1-cp314-cp314-android_24_arm64_v8a.whl.metadata (8.3 kB)
+Collecting aiosqlite
+  Using cached aiosqlite-0.22.1-py3-none-any.whl.metadata (4.3 kB)
+Requirement already satisfied: httpx in /data/data/com.termux/files/usr/lib/python3.14/site-packages (0.28.1)
+Requirement already satisfied: python-telegram-bot[job-queue] in /data/data/com.termux/files/usr/lib/python3.14/site-packages (22.8)
+Collecting aiohappyeyeballs>=2.5.0 (from aiohttp)
+  Using cached aiohappyeyeballs-2.7.1-py3-none-any.whl.metadata (5.9 kB)
+Collecting aiosignal>=1.4.0 (from aiohttp)
+  Using cached aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+Collecting attrs>=17.3.0 (from aiohttp)
+  Using cached attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting frozenlist>=1.1.1 (from aiohttp)
+  Using cached frozenlist-1.8.0-py3-none-any.whl.metadata (20 kB)
+Collecting multidict<7.0,>=4.5 (from aiohttp)
+  Using cached multidict-6.7.1-py3-none-any.whl.metadata (5.3 kB)
+Collecting propcache>=0.2.0 (from aiohttp)
+  Using cached propcache-0.5.2-py3-none-any.whl.metadata (16 kB)
+Collecting yarl<2.0,>=1.17.0 (from aiohttp)
+  Using cached yarl-1.24.2-py3-none-any.whl.metadata (94 kB)
+Requirement already satisfied: idna>=2.0 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from yarl<2.0,>=1.17.0->aiohttp) (3.18)
+Requirement already satisfied: anyio in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from httpx) (4.14.1)
+Requirement already satisfied: certifi in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from httpx) (2026.6.17)
+Requirement already satisfied: httpcore==1.* in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from httpx) (1.0.9)
+Requirement already satisfied: h11>=0.16 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from httpcore==1.*->httpx) (0.16.0)
+Requirement already satisfied: apscheduler<3.12.0,>=3.10.4 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from python-telegram-bot[job-queue]) (3.11.3)
+Requirement already satisfied: tzlocal>=3.0 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from apscheduler<3.12.0,>=3.10.4->python-telegram-bot[job-queue]) (5.4.4)
+Downloading aiohttp-3.14.1-cp314-cp314-android_24_arm64_v8a.whl (508 kB)
+Downloading multidict-6.7.1-py3-none-any.whl (12 kB)
+Downloading yarl-1.24.2-py3-none-any.whl (53 kB)
+Using cached aiosqlite-0.22.1-py3-none-any.whl (17 kB)
+Downloading aiohappyeyeballs-2.7.1-py3-none-any.whl (15 kB)
+Downloading aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+Downloading frozenlist-1.8.0-py3-none-any.whl (13 kB)
+Downloading propcache-0.5.2-py3-none-any.whl (14 kB)
+Installing collected packages: propcache, multidict, frozenlist, attrs, aiosqlite, aiohappyeyeballs, yarl, aiosignal, aiohttp
+
+Successfully installed aiohappyeyeballs-2.7.1 aiohttp-3.14.1 aiosignal-1.4.0 aiosqlite-0.22.1 attrs-26.1.0 frozenlist-1.8.0 multidict-6.7.1 propcache-0.5.2 yarl-1.24.2
+Starting bot...
+Deployment successful!

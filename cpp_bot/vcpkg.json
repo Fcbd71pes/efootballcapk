@@ -1,0 +1,8 @@
+{
+  "name": "efootball-bot",
+  "version": "1.0.0",
+  "dependencies": [
+    "tgbot-cpp",
+    "sqlite3"
+  ]
+}
